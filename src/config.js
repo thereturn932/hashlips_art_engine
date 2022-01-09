@@ -5,9 +5,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Plug-in apes";
+const description = "Plug-in Apes is a collection of 10.000 unique Apes NFTs— unique digital collectibles living on the Ethereum blockchain.";
+const baseUri = "ipfs://tempuri";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -24,15 +24,19 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10000,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "skin" },
+      { name: "body" },
+      { name: "face" },
+      { name: "tattoo" },
+      { name: "chain" },
+      { name: "clothes" },
+      { name: "Eye" },
+      { name: "glasses" },
+      { name: "Mouth" },
+      { name: "Earrings" },
+      { name: "Hat" },
     ],
   },
 ];
@@ -42,8 +46,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 5000,
+  height: 5000,
   smoothing: false,
 };
 
